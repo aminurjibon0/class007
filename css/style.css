@@ -7,7 +7,6 @@ body {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
-/*  border: 1px solid white;*/
 }
 
 /*global end*/
@@ -59,7 +58,7 @@ header {
 }
 
 .menu {
-  width: 60%;
+  width: 75%;
   float: right;
   margin-top: 60px;
 }
@@ -160,31 +159,28 @@ header {
 .service {
   background: #121B2C;
   padding-bottom: 40px;
-/*  border: 1px solid white;*/
 }
 
 .service_single {
   width: 30%;
   float: left;
-/*  border: 1px solid white;*/
   padding: 0 1.9% 0 1.2%;
   border-right: 2px solid rgba(120, 120, 120, .1);
 }
-
+.service_single:last-child {
+  border-right: none;
+}
 
 .service_single_heading {
   overflow: hidden;
-/*  border: 1px solid white;*/
 }
 
 .service_single_heading .icon {
-/*  border: 1px solid white;*/
   float: left;
   width: 20%;
 }
 
 .service_single_heading .text {
-/*  border: 1px solid white;*/
   float: left;
   width: 70%;
   margin-top: 15px;
@@ -289,6 +285,7 @@ header {
 .apple_store_banner img {
   width: 100%;
 }
+/*contact end*/
 /*footer start*/
 footer {
   background: #121B2C;
