@@ -1,0 +1,343 @@
+/*global start*/
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+/*  border: 1px solid white;*/
+}
+
+/*global end*/
+
+/*login start*/
+.login {
+  position: fixed;
+  top: 0;
+  right: 140px;
+}
+.login .client {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  background: white;
+  color: #121A2B;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: inline-block;
+  border: 1px solid #c3bfbf;
+  text-transform: uppercase;
+}
+.login .employee {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  background: #0078BC;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: inline-block;
+  position: relative;
+  left: -4px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+/*login end*/
+/*header start*/
+header {
+  background: #121B2A;
+  padding: 10px 0;
+}
+.logo {
+  width: 20%;
+  float: left;
+}
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  width: 60%;
+  float: right;
+  margin-top: 60px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.menu ul li {
+  float: left;
+}
+.menu ul li a {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 20px;
+  transition: all .5s;
+}
+.menu ul li a:hover {
+  color: #0172B2;
+}
+.menu ul li:last-child a {
+  padding-right: 0;
+}
+/*header end*/
+/*banner start*/
+.banner {
+  background-image: url('../images/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner_text {
+  margin: 250px 0 100px;
+  width: 50%;
+}
+.banner_text h1 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0;
+  color: white;
+}
+.banner_text h2 {
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: #0274B7;
+  font-size: 40px;
+}
+.banner_text p {
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+}
+.banner_text button {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: white;
+  border: none;
+  padding: 14px 20px;
+}
+.banner_text button i {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #0274B7;
+}
+/*banner end*/
+/*service start*/
+.indicator {
+  width: 20%;
+  margin: 10px auto 20px;
+  overflow: hidden;
+}
+.indicator ul {
+  list-style: none;
+}
+.indicator ul li {
+  width: 12px;
+  height: 12px;
+  background: #0E1420;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin: 0 4px;
+}
+.indicator ul .active {
+  background: #0177BD;
+}
+
+.service {
+  background: #121B2C;
+  padding-bottom: 40px;
+/*  border: 1px solid white;*/
+}
+
+.service_single {
+  width: 30%;
+  float: left;
+/*  border: 1px solid white;*/
+  padding: 0 1.9% 0 1.2%;
+  border-right: 2px solid rgba(120, 120, 120, .1);
+}
+
+
+.service_single_heading {
+  overflow: hidden;
+/*  border: 1px solid white;*/
+}
+
+.service_single_heading .icon {
+/*  border: 1px solid white;*/
+  float: left;
+  width: 20%;
+}
+
+.service_single_heading .text {
+/*  border: 1px solid white;*/
+  float: left;
+  width: 70%;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.service_single_heading .text h1 {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  
+}
+.service_single_heading .text h2 {
+  font-family: sans-serif;
+  color: #0274B7;;
+  margin: 0;
+}
+
+.service_single_text p {
+  font-family: sans-serif;
+  color: white;
+  line-height: 25px;
+}
+/*service end*/
+/*contact start*/
+.contact {
+  background: #040811;
+  color: white;
+  padding: 30px 0;
+}
+
+.contact_single {
+  width: 33%;
+  float: left;
+  padding: 10px 1%;
+  box-sizing: border-box;
+}
+.contact_single h1 {
+  font-family: sans-serif;
+}
+.contact_single p {
+  font-family: sans-serif;
+}
+
+.contact_no {
+  font-family: sans-serif;
+}
+.contact_no tr td {
+  padding: 0 3px;
+  line-height: 24px;
+}
+.cus_test {
+  font-family: sans-serif;
+  background: #0C1019;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+}
+.cus_test::after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 20px solid #0C1019;
+  border-right: 50px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  right: 60px;
+  z-index: 999;
+}
+
+.web_link {
+  font-family: sans-serif;
+}
+.web_link h3 {
+  margin: 30px 0 0;
+}
+.web_link p {
+  margin: 0;
+  line-height: 25px;
+}
+.phone {
+  float: left;
+  width: 49%;
+}
+
+.apple_store {
+  font-family: sans-serif;
+  width: 49%;
+  float: left;
+}
+.apple_store h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+.apple_store h2 {
+  margin: 0;
+  color: #0274B7;
+  margin-bottom: 20px;
+}
+.apple_store_banner img {
+  width: 100%;
+}
+/*footer start*/
+footer {
+  background: #121B2C;
+  padding: 20px 0 50px;
+}
+.footer_menu {
+  width: 60%;
+  float: left;
+}
+
+.footer_menu_links {
+  overflow: hidden;
+}
+.footer_menu_links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer_menu_links ul li {
+  float: left;
+}
+.footer_menu_links ul li a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 0 16px;
+  border-right: 1px solid white;
+}
+.footer_menu_links ul li:last-child a {
+  border-right: none;
+}
+.copyright p {
+  font-family: sans-serif;
+  color: white;
+  padding-left: 16px;
+}
+.footer_logo {
+  width: 39%;
+  float: left;
+  overflow: hidden;
+}
+.symbian, .logo_dark {
+  width: 49%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px 20px 0;
+}
+.symbian img, .logo_dark img {
+  width: 100%;
+}
+
+/*footer end*/
