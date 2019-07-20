@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/email.css">
 </head>
 <body>
 <!--  header start-->
@@ -26,6 +28,9 @@
         <a href="index.html">
           <img src="images/blue.png" alt="Blue">
         </a>
+      </div>
+      <div class="menu_bar">
+        <i class="fa fa-bars"></i>
       </div>
       <div class="menu">
         <ul>
@@ -106,7 +111,7 @@
             <img src="images/wareless.jpg" alt="Globe">
           </div>
           <div class="text">
-            <h1>Wireless <span style="color: #0177BD; font-weight: bold;">System</span></h1>
+            <h1>Wireless <span style="color: #0177BD; font-weight: bold; font-size: 22px">System</span></h1>
           </div>
         </div>
         <div class="service_single_text">
@@ -201,5 +206,37 @@
   </footer>
 <!--footer end-->
 
+
+
+<!--sign up start-->
+<section class="signup">
+  <div class="wrapper">
+    <div class="signup_heading">
+     <div class="close">X</div>
+      <h1>Client Login</h1>
+      <p>Fill up the form to see your saved data</p>
+    </div>
+    <form method="">
+      <div class="form-group">
+        <label for="email">Email : </label>
+        <input type="email" placeholder="E-mail" id="email" name="email">
+        <div id="email_err"></div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password : </label>
+        <input type="password" placeholder="Password" id="password" name="password">
+        <div id="password_err"></div>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" value="accept" name="condition"> Accept our term and condition.
+      </div>
+      <p><button type="submit" id="submit">Submit</button></p>
+    </form>
+  </div>
+</section>
+<!--sign up end-->
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
