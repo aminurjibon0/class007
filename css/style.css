@@ -57,6 +57,17 @@ header {
   width: 100%;
 }
 
+.menu_bar {
+  overflow: hidden;
+  display: none;
+}
+.menu_bar i {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  float: right;
+}
+
 .menu {
   width: 75%;
   float: right;
@@ -172,12 +183,16 @@ header {
 }
 
 .service_single_heading {
+  width: 100%;
   overflow: hidden;
 }
 
 .service_single_heading .icon {
   float: left;
   width: 20%;
+}
+.service_single_heading .icon img {
+  width: 100%;
 }
 
 .service_single_heading .text {
@@ -338,3 +353,486 @@ footer {
 }
 
 /*footer end*/
+
+
+
+
+/*under 992px website layout*/
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: 90%;
+  }
+  
+  .menu ul li a {
+    padding: 0 7px;
+  }
+  .banner {
+    background-position: center;
+  }
+  .banner_text {
+    margin: 100px 0;
+    width: 60%;
+  }
+  .banner_text h1, .banner_text h2 {
+    font-size: 30px;
+  }
+  .banner_text p {
+    font-size: 16x;
+  }
+  .banner_text button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+  .indicator {
+    width: 30%;
+    margin: 0 auto 20px auto;
+  }
+  .service {
+  background: #121B2C;
+  padding-bottom: 40px;
+  }
+  .service_single {
+    width: 30%;
+    float: left;
+    padding: 0 1.9% 0 1.2%;
+    border-right: 2px solid rgba(120, 120, 120, .1);
+  }
+  .service_single:last-child {
+    border-right: none;
+  }
+
+  .service_single_heading {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .service_single_heading .icon {
+    float: left;
+    width: 20%;
+  }
+  .service_single_heading .icon img {
+    width: 100%;
+  }
+
+  .service_single_heading .text {
+    float: left;
+    width: 70%;
+    margin-top: 0;
+    font-size: 70%;
+    padding-left: 20px;
+  }
+  .service_single_heading .text h1 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+
+  }
+  .service_single_heading .text h2 {
+    font-family: sans-serif;
+    color: #0274B7;;
+    margin: 0;
+  }
+
+  .service_single_text p {
+    font-family: sans-serif;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  /*service end*/
+  /*contact start*/
+  .contact {
+    background: #040811;
+    color: white;
+    padding: 30px 0;
+  }
+
+  .contact_single {
+    width: 33%;
+    float: left;
+    padding: 10px .1%;
+    box-sizing: border-box;
+    margin: 1px;
+  }
+  .contact_single h1 {
+    font-family: sans-serif;
+  }
+  .contact_single p {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+
+  .contact_no {
+    font-family: sans-serif;
+  }
+  .contact_no tr td {
+    padding: 0;
+    line-height: 24px;
+    font-size: 90%;
+  }
+  .cus_test {
+    font-family: sans-serif;
+    font-size: 70%;
+    background: #0C1019;
+    display: block;
+    padding: 2px 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .cus_test::after {
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 20px solid #0C1019;
+    border-right: 50px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 60px;
+    z-index: 999;
+  }
+
+  .web_link {
+    font-family: sans-serif;
+    font-size: 70%;
+    padding-left: 10px;
+  }
+  .web_link h3 {
+    margin: 30px 0 0;
+  }
+  .web_link p {
+    margin: 0;
+    line-height: 25px;
+  }
+  .phone {
+    float: left;
+    width: 49%;
+  }
+
+  .apple_store {
+    font-family: sans-serif;
+    width: 49%;
+    float: left;
+  }
+  .apple_store h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 30px 0 0 0;
+  }
+  .apple_store h2 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 35px;
+    color: #0274B7;
+    margin-bottom: 20px;
+  }
+  .apple_store_banner img {
+    width: 100%;
+  }
+  /*contact end*/
+  /*footer start*/
+  footer {
+    background: #121B2C;
+    padding: 20px 0 50px;
+  }
+  .footer_menu {
+    width: 60%;
+    float: left;
+  }
+
+  .footer_menu_links {
+    overflow: hidden;
+  }
+  .footer_menu_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer_menu_links ul li {
+    float: left;
+  }
+  .footer_menu_links ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0 16px;
+    border-right: 1px solid white;
+  }
+  .footer_menu_links ul li:last-child a {
+    border-right: none;
+  }
+  .copyright p {
+    font-family: sans-serif;
+    color: white;
+    padding-left: 16px;
+  }
+  .footer_logo {
+    width: 39%;
+    float: left;
+    overflow: hidden;
+  }
+  .symbian, .logo_dark {
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 20px 0;
+  }
+  .symbian img, .logo_dark img {
+    width: 100%;
+  }
+}
+
+
+
+
+/*under 768px website layout*/
+@media only screen and (max-width: 768px) {
+  .login {
+    position: static;
+    background: #131a34;
+  }
+  .logo {
+    width: 160px;
+/*    border: 1px solid white;*/
+  }
+  .wrapper {
+    width: 95%;
+/*    border: 1px solid purple;*/
+  }
+  .menu_bar {
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  .menu ul {
+    float: none;
+    margin-top: 10px;
+  }
+  .menu ul li {
+    float: none;
+  }
+  .menu ul li a {
+    padding: 10px 30px;
+    font-size: 18px;
+    background: #05132d;
+    color: #7d899b;
+    border-bottom: 1px solid #565656;
+  }
+  .menu ul li:last-child a {
+    border-bottom: none;
+  }
+  .banner_text {
+    margin: 100px 0;
+    width: 90%;
+  }
+  .banner_text h1, .banner_text h2 {
+    font-size: 30px;
+  }
+  .banner_text p {
+    font-size: 16x;
+  }
+  .banner_text button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+  .indicator {
+    display: none;
+  }
+  .service {
+  background: #121B2C;
+  padding-bottom: 20px;
+  }
+  .service_single {
+    width: 90%;
+    padding: 3% 2% 0 2%;
+    border-style: none;
+    border-bottom: .5px solid #333333;
+  }
+  .service_single:last-child {
+    border-bottom: none;
+  }
+  .service_single_heading {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .service_single_heading .icon {
+    float: left;
+    width: 30%;
+  }
+  .service_single_heading .icon img {
+    width: 100%;
+  }
+
+  .service_single_heading .text {
+    float: left;
+    width: 55%;
+    margin-top: 25px;
+    font-size: 85%;
+    padding-left: 20px;
+  }
+  .service_single_heading .text h1 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+
+  }
+  .service_single_heading .text h2 {
+    font-family: sans-serif;
+    color: #0274B7;;
+    margin: 0;
+  }
+
+  .service_single_text p {
+    font-family: sans-serif;
+    color: white;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  /*service end*/
+  /*contact start*/
+  .contact {
+    background: #040811;
+    color: white;
+    padding: 5px 0;
+  }
+
+  .contact_single {
+    width: 90%;
+    float: left;
+    padding: 10px 6%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border-bottom: 1px solid #31394e;
+  }
+  .contact_single h1 {
+    font-family: sans-serif;
+  }
+  .contact_single p {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+
+  .contact_no {
+    font-family: sans-serif;
+  }
+  .contact_no tr td {
+    padding: 0;
+    line-height: 24px;
+    font-size: 90%;
+  }
+  .cus_test {
+    font-family: sans-serif;
+    font-size: 70%;
+    background: #0C1019;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .cus_test::after {
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 20px solid #0C1019;
+    border-right: 50px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 60px;
+    z-index: 999;
+  }
+
+  .web_link {
+    font-family: sans-serif;
+    font-size: 70%;
+    padding-left: 10px;
+  }
+  .web_link h3 {
+    margin: 30px 0 0;
+  }
+  .web_link p {
+    margin: 0;
+    line-height: 25px;
+  }
+  .phone {
+    float: left;
+    width: 49%;
+  }
+
+  .apple_store {
+    font-family: sans-serif;
+    width: 49%;
+    float: left;
+  }
+  .apple_store h1 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 30px 0 0 0;
+  }
+  .apple_store h2 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 35px;
+    color: #0274B7;
+    margin-bottom: 20px;
+  }
+  .apple_store_banner img {
+    width: 100%;
+  }
+  /*contact end*/
+  /*footer start*/
+  footer {
+    background: #121B2C;
+    padding: 20px 0 50px;
+  }
+  .footer_menu {
+    width: 90%;
+    float: none;
+  }
+
+  .footer_menu_links {
+    overflow: hidden;
+  }
+  .footer_menu_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer_menu_links ul li {
+    float: left;
+  }
+  .footer_menu_links ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0 16px;
+    border-right: 1px solid white;
+  }
+  .footer_menu_links ul li:last-child a {
+    border-right: none;
+  }
+  .copyright p {
+    font-family: sans-serif;
+    color: white;
+    padding-left: 16px;
+  }
+  .footer_logo {
+    width: 39%;
+    float: left;
+    overflow: hidden;
+  }
+  .symbian, .logo_dark {
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 20px 0;
+  }
+  .symbian img, .logo_dark img {
+    width: 100%;
+  }
+}
